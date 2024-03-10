@@ -1,0 +1,358 @@
+
+/* prototype */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+img, svg
+ {
+  display: block;
+  max-width: 100%;
+}
+
+a { 
+  text-decoration: none;
+  display: inline-block;
+}
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+/* end of prototype */
+
+/* PERSONAL TEMPLATE */
+
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: "poppins", sans-serif;
+}
+
+ /* MOBILE POV */
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 86%);
+    /* padding: rem; */
+    width: 100vw;
+    height: 100vh;
+ }
+ #outercontainer{
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 6rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: white;
+    margin-bottom: 1rem;
+ }
+ #inputs{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+ }
+ .ghost{
+  position: relative;
+ }
+ .minions{
+  height: 2.8rem;
+  width: 5rem;
+  margin-left: 10px;
+  border-radius: 9px;
+  border-color: hsl(0, 0%, 86%);
+  padding: 9px;
+  font-size: large;
+  font-weight: 800;
+  cursor: pointer;
+  transition:  ease-in;
+  transition-duration: 300ms;
+ }
+ .minions:hover, .minions:focus, .minions:active {
+  border: 2px solid hsl(259, 100%, 65%);
+ 
+ }
+ span{
+  position: absolute;
+  top: -22px;
+  left: 10px;
+  font-size: small;
+  font-weight: 900;
+  font-style: bold;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  /* color: red; */
+ }
+#divider{
+  width: inherit;
+  height: 2px;
+  margin-top: 4rem;
+  background-color: hsl(0, 0%, 86%);
+  position: relative;
+}
+.parody{
+  position: absolute;
+  height: 3.9rem;
+  width: 3.9rem;
+  border-radius: 100%;
+  top: -2rem;
+  left: 39%;
+}
+button{
+  position: absolute;
+  height: 3.9rem;
+  width: 3.9rem;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: hsl(259, 100%, 65%);
+  border: 0cap;
+  cursor: pointer;
+}
+.button-overlay{
+  position: absolute;
+  height: 3.9rem;
+  width: 3.9rem;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  border: 0cap;
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease;
+  background-color: black;
+  cursor: pointer;
+}
+.parody:hover .button-overlay{
+  opacity: 1;
+}
+/* button:hover::before{
+  opacity: 1;
+} */
+img{
+  z-index: 3;
+  position: absolute;
+  left: 30%;
+  top: 19px;
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+}
+#scnd{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+.dynamic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+  color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+.dash1, .dash2{
+  height: 8px;
+  width: 1.5rem;
+  background-color: hsl(259, 100%, 65%);
+  transform: skewX(-9deg);
+}
+.dash1{
+  margin-right: .6rem;
+}
+.writeup{
+  margin-left: .6rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.7rem;
+  font-style: italic;
+  font-size: bolder;
+}
+.err{
+  font-family: "poppins", sans-serif;
+  font-size: xx-small;
+  font-weight: 600;
+  font-style: italic;
+  color: red;
+  letter-spacing: 0px;
+  width: 4rem;
+  margin-left: 11px;
+  margin-top: 7px;
+  display: none;
+}
+
+@media(min-width:374px){
+  #outercontainer{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5.5rem;
+  }
+  .minions{
+    height: 3.2rem;
+    width: 5.6rem;
+  }
+}
+
+/* TAB POV */
+@media(min-width:424px){
+  .minions{
+    margin-left: 17px;
+    font-size: x-large;
+    width: 6rem;
+  }
+  #inputs{
+    margin-left: -15px;
+  }
+  span{
+    left: 17px;
+    font-style: bolder;
+  }
+  .writeup{
+    margin-left: .9rem;
+    font-size: 2.9rem;
+  }
+  .dynamic{font-size: 3.2rem;
+  }
+  .err{
+    margin-left: 1rem;
+    width: auto;
+    /* display: none; */
+  }
+}
+
+/* TAB/LAPPIE POV */
+@media(min-width:770px){
+  #outercontainer{
+    min-width: 42rem;
+    padding-top: 2.9rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    border-bottom-right-radius: 10rem;
+    margin-bottom: 0;
+  }
+  .minions{
+    margin-left: 27px;
+    width: 7.5rem;
+    height: 4rem;
+    padding: 11px;
+  }
+  #inputs{
+    margin-left: -27px;
+  }
+  span{
+    left: 1.7rem;
+  }
+  .parody{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    top: -2.7rem;
+    left: 86.5%;
+  }
+  button{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: hsl(259, 100%, 65%);
+    border: 0cap;
+    cursor: pointer;
+  }
+  .button-overlay{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+  }
+  img{
+    left: 30%;
+    top: 24px;
+    height: 1.9rem;
+    width: 1.9rem;}
+
+    .dash1, .dash2{
+      height: 14px;
+      width: 2.3rem;
+      background-color: hsl(259, 100%, 65%);
+      transform: skewX(-11deg);
+    }
+    .dash1{
+      margin-right: 1.4rem;
+    }
+    .writeup{
+      margin-left: 1rem;
+      font-weight: 900;
+      font-size: 3.7rem;
+      font-style: italic;
+      font-size: bolder;
+      letter-spacing: 0;
+      font-size: 3.7rem;
+    }
+    .err{
+      font-size: x-small;
+      margin-left: 1.7rem;
+    }
+}

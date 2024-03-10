@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="output.css">
+
+</head>
+<body >
+ <div id="outercontainer">
+  <!-- 1st half -->
+  <div id="inputs">
+    <div class="ghost"><input type="number" id="day-input" placeholder="DD" class="minions"><span id="day">DAY</span><p class="err" id="err001">
+    </p></div>
+    <div class="ghost"><input type="number" id="month-input" placeholder="MM" class="minions"><span id="month">MONTH</span><p class="err" id="err002">
+    </p></div>
+    <div class="ghost"><input type="number" id="year-input" placeholder="YYYY" class="minions"><span id="year">YEAR</span><p class="err" id="err003">
+    </p></div>
+  </div>
+  <div id="divider">
+    <div class="parody">
+    <button type="submit" id="submit"></button>
+    <div class="button-overlay"></div>
+    <img src="assets\images\icon-arrow.svg" alt="arrow">
+   </div>
+  </div>
+
+  <!-- 2nd half -->
+  <div id="scnd">
+    <section>
+      <div id="year-convert" class="dynamic">
+        <p class="dash1"></p>
+        <p class="dash2"></p>
+      </div>
+      <div class="writeup">years</div>
+    </section>
+    <section>
+      <div id="month-convert" class="dynamic">
+        <p class="dash1"></p>
+        <p class="dash2"></p>
+      </div><div class="writeup">months</div>
+    </section>
+    <section>
+      <div id="days-convert" class="dynamic">
+        <p class="dash1"></p>
+        <p class="dash2"></p>
+      </div><div class="writeup">days</div>
+    </section>
+  </div>
+ </div>
+ <script src="default.js"></script>
+</body>
+</html>
