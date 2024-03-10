@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [click here](http://127.0.0.1:5500/index.html)
-- Live Site URL: [coming soon](https://your-live-site-url.com)
+- Live Site URL: [coming soon](https://vo-ke.github.io/age-calculator/)
 
 ## My process
 
